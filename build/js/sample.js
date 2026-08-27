@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 let x = 19;
 if (x > 18) {
     console.log("allowed");
@@ -7,4 +5,5 @@ if (x > 18) {
 else {
     console.log("not allowed");
 }
+export {};
 //# sourceMappingURL=sample.js.map

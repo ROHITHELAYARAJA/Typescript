@@ -5,8 +5,7 @@
     "rootDir": "./src",
     "outDir": "./build/js",
     // Environment Settings
-    // See also https://aka.ms/tsconfig/module
-    "module": "nodenext",
+    "module": "ESNext",
     "target": "esnext",
     "types": [],
     // For nodejs:

@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 let userName = 'rohith';
 console.log(userName);
 let a = 19;
@@ -8,4 +6,11 @@ console.log(a * Number(b));
 let myName;
 myName = 'rohith';
 console.log(myName);
+let myAge;
+myAge = 19;
+console.log(myAge);
+let cartoon;
+cartoon = 'ben-10';
+console.log(cartoon);
+export {};
 //# sourceMappingURL=main.js.map
