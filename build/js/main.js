@@ -5,4 +5,7 @@ console.log(userName);
 let a = 19;
 let b = '1';
 console.log(a * Number(b));
+let myName;
+myName = 'rohith';
+console.log(myName);
 //# sourceMappingURL=main.js.map
