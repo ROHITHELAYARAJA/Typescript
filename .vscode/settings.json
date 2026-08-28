@@ -3,5 +3,6 @@
     "typescript": "npx tsx"
   },
   "code-runner.clearPreviousOutput": true,
-  "code-runner.showExecutionMessage": false
+  "code-runner.showExecutionMessage": false,
+  "workbench.iconTheme": "vs-seti"
 }
