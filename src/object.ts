@@ -28,7 +28,19 @@ type Student = {
 const myObj2 : Student = {
     name : "rohith",
     age : 19,
-    isStudent : true
+    isStudent:true
 }
 
-console.log(myObj2);
+const myObj3 : Student = {
+    name : "aizen",
+    age:1,
+    isStudent :true
+}
+
+myObj = myObj3;
+
+const example = (myobj4:Student)=>{
+    return `Hello ${myobj4.name}`;
+}
+
+console.log(example(myObj3));
