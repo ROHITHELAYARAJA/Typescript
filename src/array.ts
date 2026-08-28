@@ -10,3 +10,9 @@ for (let i = 0; i < numArr.length; i++) {
 
 strArr[0]='19';
 
+
+let StrNum = ['e',"rohith",1,true];
+console.log(StrNum);
+
+let all:any = [2,4,true];
+console.log(all);
