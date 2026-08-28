@@ -75,6 +75,7 @@ selectedUser = null;
 let username;
 username = "Rohith";
 username = undefined;
+username = null;
 // 17. NEVER
 // Function never successfully returns
 function throwError() {
@@ -107,4 +108,3 @@ const sample = (a, b) => {
 let answer = sample(1, 3);
 console.log(answer);
 export {};
-//# sourceMappingURL=datatype.js.map

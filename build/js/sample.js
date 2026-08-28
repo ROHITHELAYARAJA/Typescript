@@ -6,4 +6,3 @@ else {
     console.log("not allowed");
 }
 export {};
-//# sourceMappingURL=sample.js.map

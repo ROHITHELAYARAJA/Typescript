@@ -137,10 +137,11 @@ selectedUser = null;
 
 // 16. UNDEFINED
 // Represents an undefined value
-let username: string | undefined;
+let username: string | undefined |null;
 
 username = "Rohith";
 username = undefined;
+username = null;
 
 
 // 17. NEVER

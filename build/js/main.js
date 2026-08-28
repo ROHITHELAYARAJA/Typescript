@@ -13,4 +13,3 @@ let cartoon;
 cartoon = 'ben-10';
 console.log(cartoon);
 export {};
-//# sourceMappingURL=main.js.map
