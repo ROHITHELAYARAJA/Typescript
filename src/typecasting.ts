@@ -19,11 +19,20 @@ let myNum :number = addOrConcat(2,3,"concat") as number;
 
 (10 as unknown) as string; // double assertion
 
-// DOM
+// DOM (works in a browser, not in Node)
 
-const myInput = document.getElementById("myInput") as HTMLInputElement;
+const myInput = typeof document !== "undefined"
+    ? document.getElementById("myInput") as HTMLInputElement | null
+    : null;
 
-const img = document.querySelector("img")!;
+const img = typeof document !== "undefined"
+    ? document.querySelector("img")
+    : null;
 
-img.src;
-myInput.value;
+if (myInput) {
+    console.log(myInput.value);
+}
+
+if (img) {
+    console.log(img.src);
+}
