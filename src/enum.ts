@@ -8,6 +8,8 @@ enum Grade{
 
 const myGrade = Grade.Q;
 
+console.log(Grade);
+
 console.log(myGrade);
 
 export{};
