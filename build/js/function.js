@@ -13,4 +13,8 @@ const logMsg = (message) => {
 let sub = function (c, d) {
     return c - d;
 };
+let multiply = function (c, d) {
+    return c * d;
+};
+logMsg(add(2, 3));
 export {};
