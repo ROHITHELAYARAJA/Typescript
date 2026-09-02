@@ -28,18 +28,18 @@ let sub = function(c:number,d:number):number{
     return c-d;
 }
 
-type MathFunction = (a:number,b:number) => number;
+type MathFn = (a:number,b:number) => number;
 
-let multiply :MathFunction = function (c,d){
+let multiply :MathFn = function (c,d){
     return c*d;
 }
 
 logMsg(add(2,3));
-logMsg(multiply(7*9));
+logMsg(multiply(7,9));
 
 // Interface also work 
 
-interface MathFunction { 
+interface MathOperation { 
     (a:number,b:number) : number
 };
 
@@ -49,11 +49,14 @@ const addAll = (a:number,b:number,c:number):number=>{
 
 // Optional parameter 
 
-const addAllOptional = (a?:number,b:number,c?:number):number=>{
-    if(typeof c !== "undefined"){
+const addAllOptional = (a:number,b?:number,c?:number):number=>{
+    if(typeof b !== "undefined" && typeof c !== "undefined"){
         return a+b+c;
     }
-    return 0;
+    if(typeof b !== "undefined"){
+        return a+b;
+    }
+    return a;
 }
 
 // Default parameter
@@ -64,7 +67,7 @@ const addAllDefault = (a:number,b:number,c:number=10):number=>{
 
 // Optional parameter Calling with undefined
 
-logMsg(addAllOptional(undefined,3,4));
+logMsg(addAllOptional(0,3,4));
 
 // Rest parameter
 
