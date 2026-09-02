@@ -1,3 +1,15 @@
+class Coder {
+    constructor(
+        public readonly name: string,
+        public music: string,
+        private age: number,
+        protected lang: string
+    ) {
+        // The body can be left completely empty!
+        // TypeScript automatically handles this.name = name, this.music = music, etc.
+    }
+}
+
 class Aids_C{
   public name: string;
   private cgpa: number;
