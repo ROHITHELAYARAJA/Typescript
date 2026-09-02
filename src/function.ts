@@ -53,7 +53,7 @@ const addAllOptional = (a?:number,b:number,c?:number):number=>{
     if(typeof c !== "undefined"){
         return a+b+c;
     }
-    return a+b;
+    return 0;
 }
 
 // Default parameter
@@ -64,7 +64,7 @@ const addAllDefault = (a:number,b:number,c:number=10):number=>{
 
 // Optional parameter Calling with undefined
 
-logMsg(addAllOptional("undefined",3,4));
+logMsg(addAllOptional(undefined,3,4));
 
 // Rest parameter
 
