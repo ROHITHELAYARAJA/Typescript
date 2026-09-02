@@ -1,18 +1,18 @@
 class Aids_C{
   public name: string;
-  #cgpa: number;
+  private cgpa: number;
 
   constructor(name: string, cgpa: number){
     this.name = name;
-    this.#cgpa = cgpa;
+    this.cgpa = cgpa;
   }
   
   SetCgpa(cgpa: number){
-    this.#cgpa = cgpa;
+    this.cgpa = cgpa;
   }
 
   ShowCgpa(){
-    console.log(this.#cgpa);
+    console.log(this.cgpa);
   }
 }
 
@@ -21,4 +21,4 @@ st1.ShowCgpa();
 
 console.log(st1.name);
 
-// console.log(st1.#cgpa); 
+console.log(st1.cgpa); 
